@@ -1,0 +1,85 @@
+<!-- Index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+				initial-scale=1.0"
+    />
+    <!-- Linking css file -->
+    <link rel="stylesheet" href="formstyle.css" />
+    <title>Registration Form</title>
+  </head>
+
+  <body background="blueeeeee.webp">
+    <div id="message-container"></div>
+    <!-- Creating the form container -->
+    <div class="container" >
+      <h2>Registration Form</h2>
+
+      <!-- Contains error -->
+      <h4 id="errorText"></h4>
+
+      <!-- Form element -->
+      <form id="Form" onsubmit="handleSubmit(event)">
+        <label for="name"> Full Name: </label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="address"> Address: </label><br />
+        <input type="text" id="address" name="address" required /><br />
+
+        <label for="age"> Age: </label><br />
+        <input type="text" id="age" name="age" required /><br />
+
+        <label for="spots"> Select Nearer Vaccination spot: </label><br /><br />
+        <select id="spots" name="spots" style="height: 30px">
+          <option value="Padmakalyan School, Bhaktapur Durbar Sq.">Padmakalyan School, Bhaktapur Durbar Sq.</option>
+          <option value="Lokanthali Healthpost, Lokanthali">Lokanthali Healthpost, Lokanthali</option>
+          <option value="Balkot Swasthya Chauki, Balkot">Balkot Swasthya Chauki, Balkot</option>
+          <option value="Bageshor school, Chyamasing">Bageshor school , Chyamasing</option>
+          <option value="Thimi Healthpost, Nayathimi">Thimi Healthpost, Nayathimi</option>
+          <option value="Changunarayan Hospital, Changunarayan"> Changunarayan Hospital , Changunarayan</option>
+          </select><br /><br />
+
+        <label for="date"> Select Date: </label><br /><br />
+        <select id="date" name="date" style="height: 30px">
+          <option value="Asadh 13, 2081">Asadh 13, 2081</option>
+          <option value="Asadh 17, 2081">Asadh 17, 2081</option>
+          <option value="Asadh 25, 2081">Asadh 25, 2081</option>
+          <option value="Shrawan 03, 2081">Shrawan 03, 2081</option>
+        
+          </select><br /><br />
+
+        <label> Choose Vaccine Name: </label><br />
+
+        <input type="radio" id="bcg" name="type" value="Bacillus Calmette Guerin (BCG)" required checked/>
+
+        <label for="bcg"> Bacillus Calmette Guerin (BCG) </label><br />
+
+        <input type="radio" id="dpt" name="type" value="DPT-HepB-HiB" required />
+
+        <label for="dpt"> DPT-HepB-HiB</label><br />
+
+        <input type="radio" id="opv" name="type" value="Oral Polio Vaccine (OPV)" required />
+        <label for="outdoor"> Oral Polio Vaccine (OPV)</label><br />
+
+        <input type="radio" id="pcv" name="type" value="Pneumococcal Conjugate Vaccine (PCV)" required />
+
+        <label for="indoor"> Pneumococcal Conjugate Vaccine (PCV) </label><br />
+
+        <input type="radio" id="mr" name="type" value="Measles - Rubella (MR)" required />
+
+        <label for="mr"> Measles - Rubella (MR) </label><br />
+
+        
+
+        <button type="submit" id="button" >Submit</button>
+      </form>
+    </div>
+
+    <!-- linking javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

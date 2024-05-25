@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="faqstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Frequenty Asked Questions</h1>
+        <div class="faq active">
+            <button class="accordion">
+                1. What is this website for?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>This website helps individuals register for vaccinations, access information about vaccines, and receive updates on their vaccination status.</p>
+            </div>
+        </div>
+
+        <div class="faq active">
+            <button class="accordion">
+                2. Who can register?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Anyone eligible according to government guidelines (age, health conditions, occupation, etc.) can register.  </div>
+        </div>
+
+        <div class="faq active">
+            <button class="accordion">
+                
+            3. Is registration free?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Yes, it is completely free.
+                </div>
+        </div>
+        <div class="faq active">
+            <button class="accordion">
+                4. How do I register?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Visit the registration page, fill in your details, select a vaccine, choose an appointment time and location, and submit the form. You’ll receive a confirmation email or SMS.</div>
+        </div>
+        <div class="faq active">
+            <button class="accordion">
+                5. What information is needed?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Provide your name, date of birth, contact details, and relevant medical history. </div>
+        </div>
+        <div class="faq active">
+            <button class="accordion">
+                6. Are there side effects?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Common side effects include mild fever, soreness, and fatigue. Consult vaccine information or a healthcare professional for details. </div>
+        </div>
+        <div class="faq active">
+            <button class="accordion">
+                7. How is my information protected?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Your personal information is stored securely and used only for vaccination purposes, in line with data protection regulations. </div>
+        </div>
+        <div class="faq active">
+            <button class="accordion">
+                8. What should I bring to my appointment?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Bring a your confirmation message along with token number . </div>
+        </div>
+        <div class="faq active">
+            <button class="accordion">
+                10. Will I get proof of vaccination?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Yes, you will receive a vaccination card or certificate.  </div>
+        </div>
+        
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for(i=0; i<acc.length; i++){
+          acc[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+
+            var pannel= this.nextElementSibling;
+            if(pannel.style.display==="block"){
+                pannel.style.display = "none";
+
+            }
+            else{
+                pannel.style.display="block";
+            }
+          });
+        }
+    </script>
+</body>
+</html>
