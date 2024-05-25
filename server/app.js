@@ -18,7 +18,7 @@ app.use(morgan('dev'));
 
 //testing server
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Hello World! The server is fired');
 });
 
 app.use("/api/v1", registerRoute)
